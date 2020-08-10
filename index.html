@@ -1,1 +1,9 @@
-Test
+<script>
+  function frame() {
+  var code = document.getElementById("code").value;
+  document.getElementById("frame").src = "https://www.youtube.com/embed/" + code;
+  }
+</script>
+<input id="code"><button onclick="frame()">submit</button>
+<br>
+<iframe id="frame" width="240" height="135" allowfullscreen></iframe>
