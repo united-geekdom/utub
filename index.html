@@ -4,6 +4,12 @@
   document.getElementById("frame").src = "https://www.youtube.com/embed/" + code;
   }
 </script>
+<style>
+  iframe {
+    width: 70%;
+    height: 70%;
+  }
+</style>
 <input id="code"><button onclick="frame()">submit</button>
 <br>
-<iframe id="frame" width="240" height="135" allowfullscreen></iframe>
+<iframe id="frame" allowfullscreen></iframe>
