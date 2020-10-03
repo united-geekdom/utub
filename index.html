@@ -1,4 +1,8 @@
 <script>
+  var l = location.href.split(#);
+  if(l[1] != "") {
+    document.getElementById("frame").src = "https://www.youtube.com/embed/" + l[1];
+  }
   function frame() {
   var code = document.getElementById("code").value;
   document.getElementById("frame").src = "https://www.youtube.com/embed/" + code;
