@@ -6,7 +6,8 @@
   }
   function frame() {
   var code = document.getElementById("code").value;
-  document.getElementById("frame").src = "https://www.youtube.com/embed/" + code;
+  location.href += "#" + code;
+  location.reload();
   }
 </script>
 <style>
