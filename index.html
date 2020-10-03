@@ -1,5 +1,6 @@
 <script>
-  var l = location.href.split(#);
+  var l = location.href;
+  l = l.split(#);
   if(l[1] != "") {
     document.getElementById("frame").src = "https://www.youtube.com/embed/" + l[1];
   }
