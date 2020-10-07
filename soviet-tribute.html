@@ -4,10 +4,26 @@
     <meta charset="utf-8">
     <title>Soviet Tribute</title>
   </head>
-  <body style="margin: 5%; background: black;">
+  <body>
+    <style media="screen">
+      body {
+        margin: 3%;
+        background: black;
+      }
+      h1 {
+        font-size: 200%;
+        color: whitesmoke;
+      }
+    </style>
+    <h1 id="trol"></h1>
     <video width="80%" height="30%" autoplay>
       <source src="rick.mp4" type="video/mp4">
       Your browser does not support HTML video.
     </video>
+    <script type="text/javascript">
+      setInterval(function () {
+        document.getElementById('trol').innerHTML = "HAHA TROLL'D";
+      }, 250);
+    </script>
   </body>
 </html>
