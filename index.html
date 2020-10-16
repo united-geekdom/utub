@@ -1,27 +1,29 @@
 <head>
   <title>Youtube viewer</title>
 </head>
-<body>
+<body onload="load()">
 <script>
+  function load() {
   var l = location.href;
   l = l.split("#");
   if(l[1] != "") {
-    document.getElementById("frame").src = "https://www.youtube.com/embed/" + l[1];
+    document.getElementById("f").src = "https://www.youtube.com/embed/" + l[1];
   }
+}
   function frame() {
   var code = document.getElementById("code").value;
-  location.href += "#" + code;
+  location.href = "/#" + code;
   location.reload();
   }
 </script>
 <style>
   iframe {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
   }
 </style>
 <label>Place the code for the youtube video here</label>
 <input id="code"><button onclick="frame()">submit</button>
 <br>
-<iframe id="frame" allowfullscreen></iframe>
+<iframe id="f" allowfullscreen></iframe>
 </body>
