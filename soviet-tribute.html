@@ -17,10 +17,11 @@
       }
     </style>
     <h1 id="trol"></h1>
-    <iframe src="rick.mp4"></iframe>
+    <video width="100%" height="100%" id='rick'> <source src="rick.mp4" type="video/mp4"> </video>
     <script type="text/javascript">
       setInterval(function () {
         document.getElementById('trol').innerHTML = "HAHA TROLL'D";
+        document.getElementById('rick').play();
       }, 250);
     </script>
   </body>
