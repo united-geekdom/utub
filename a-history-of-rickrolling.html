@@ -1,0 +1,29 @@
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Soviet Tribute</title>
+  </head>
+  <body>
+    <style media="screen">
+      body {
+        margin: 1%;
+        background: black;
+      }
+      h1 {
+        font-size: 300%;
+        text-align: center;
+        color: whitesmoke;
+      }
+    </style>
+    <h1 id="trol"></h1>
+    <video width="100%" height="100%" id='rick'> <source src="rick.mp4" type="video/mp4"> </video>
+    <script type="text/javascript">
+      setInterval(function () {
+        document.getElementById('trol').innerHTML = "HAHA TROLL'D";
+        document.getElementById('rick').play();
+      }, 250);
+    </script>
+  </body>
+</html>
